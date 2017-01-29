@@ -6,9 +6,9 @@ RUN apt update \
 
 WORKDIR /tmp
 RUN set -x \
-    && wget https://github.com/fatedier/frp/releases/download/v0.9.2/frp_0.9.2_linux_amd64.tar.gz \
-    && tar -zxf frp_0.9.2_linux_amd64.tar.gz \
-    && mv frp_0.9.2_linux_amd64 /var/frp \
+    && wget https://github.com/fatedier/frp/releases/download/v0.9.3/frp_0.9.3_linux_amd64.tar.gz \
+    && tar -zxf frp_0.9.3_linux_amd64.tar.gz \
+    && mv frp_0.9.3_linux_amd64 /var/frp \
     && mkdir -p /var/frp/conf \
     && apt remove -y wget \
     && apt autoremove -y \
