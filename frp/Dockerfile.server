@@ -1,8 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER keepwn <keepwn@gmail.com>
 
-ARG FRP_VERSION 0.12.0
-ENV FRP_VERSION ${FRP_VERSION}
+ARG FRP_VERSION=0.12.0
 
 RUN apt update \
     && apt install -y wget
